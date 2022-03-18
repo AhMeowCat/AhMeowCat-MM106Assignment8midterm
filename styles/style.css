@@ -103,6 +103,8 @@ nav li:hover,
 .active {
   color: #753557;
   text-shadow: 2px 2px rgb(187, 176, 176);
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .gridwrapper {
