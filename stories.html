@@ -26,13 +26,13 @@
 
   <div class="music">
     <audio controls autoplay loop>
-      <source src="audio/birdsong.ogg" type="audio/ogg">
-      <source src="audio/birdsong.mp3" type="audio/mp3">
+      <source src="audio/fountain.ogg" type="audio/ogg">
+      <source src="audio/fountain.mp3" type="audio/mp3">
     </audio>
   </div>
 
-  <div class="background1">
-    <div class="background2">
+  <div class="background5">
+    <div class="background4A">
 
       <div class="gridwrapper">
 
@@ -42,8 +42,9 @@
         </header>
         <nav>
           <ul>
+            <li><a href="index.html">home</a></li>
             <li><a href="thoughts.html">thoughts</a></li>
-            <li><a href="stories.html">stories</a></li>
+            <li><a class="active" href="#">stories</a></li>
             <li><a href="mentor.html">mentor</a></li>
             <li><a href="connect.html">connect</a></li>
           </ul>
@@ -51,57 +52,28 @@
         <a class="search" href="#"><img id="search" src="images/icons/all-search.png" alt="search"></a>
 
         <div class="left topbar">
-          <img id="sun" src="images/drawings/sun.png" alt="sun">
-          <h1>journey with me</h1>
-          <p>“Just living is not enough,” <br>
-            said the butterfly, <br>
-            “one must have sunshine, <br>
-            freedom and a little flower”<br>
-            <span>Hans Christian Anderson</span></p>
-          <img id="flower" src="images/drawings/flower.png" alt="a little flower">
+          <img id="sun3" src="images/drawings/sun.png" alt="sun">
+          <a id="stories_journal_h" href="#">my journal >></a>
+          
+          <p id="stories_journal_p">Love is the ultimate lesson of all these, this life, the stories, the journey. Life
+            is about setting your intention to live it to the fullest, to realize the best of yourself, to see love
+            through joy & pain, and to carry no expectation... the outcome is irrelevant, only the intention
+            matters.<br>“You become what you think.”
         </div>
 
         <div class="right topbar">
-          <button id="playmusic" onClick="playPause()">
-            <audio src="audio/birdsong.mp3" autoplay loop></audio>
-            listen to birds!
-          </button>
-
-          <script>
-            var aud = document.getElementById("playmusic").children[0];
-            var isPlaying = false;
-            aud.pause();
-
-            function playPause() {
-              if (isPlaying) {
-                aud.pause();
-              } else {
-                aud.play();
-              }
-              isPlaying = !isPlaying;
-            }
-          </script>
         </div>
 
-        <!--
-        <div class="journey">
-          <img id="riverpath" src="images/drawings/river+path.png" alt="butterfly flying over river">
-        </div>
-      -->
-
-        <div class="first destinations">
-          <a href="thoughts.html"><img src="images/icons/home-thoughts.png" alt="thoughts"></a>
-          <h3 class="label">thoughts</h3>
+        <div class="first">
         </div>
 
-        <div class="second destinations">
-          <a href="stories.html"><img src="images/icons/home-stories.png" alt="stories"></a>
-          <h3 class="label">stories</h3>
+        <div class="second">
+          <div class="trigger">
+            <img id="boat2" src="images/icons/all-boat.png" alt="boat">
+          </div>
         </div>
-        
-        <div class="third destinations">
-          <a href="mentor.html"><img src="images/icons/home-mentor.png" alt="mentor"></a>
-          <h3 class="label">mentor</h3>
+
+        <div class="third">
         </div>
 
         <div class="butterfly">
@@ -110,21 +82,25 @@
           </div>
         </div>
 
-        <div class="fourth destinations">
-          <a href="connect.html"><img src="images/icons/home-connect.png" alt="connect"></a>
-          <h3 class="label">connect</h3>
+        <div class="fourth">       
+          <a id="stories_pics_h" href="#">a picture worth a<br>thousand words >></a>
+          <br>
+
+          <img id="stories_pics" src="images/photos/reflection.jpg" alt="water reflection">
+
+          <p id="stories_pics_p">“In the sea of grief, there were islands of grace, moments in time when one could
+            remember what was left rather than all that had been lost.” <br>
+            <span>Night Road by Kristin Hannah</span></p>
         </div>
 
         <div class="left bottombar">
-          <img id="CatBunny" src="images/drawings/bunny-color.png" alt="Cat+Bunny">
           <div class="trigger">
-            <p id="home_tagline">Love is the wind that sails us onto our journey.</p>
-            <img id="boat" src="images/icons/all-boat.png" alt="boat">
+            <p id="stories_tagline">Every day can be both ordinary and extraordinary if you choose it.</p>
           </div>
         </div>
 
         <div class="right bottombar">
-
+          <img id="CatBunny" src="images/drawings/bunny-color.png" alt="Cat+Bunny">
         </div>
 
         <footer>
@@ -134,7 +110,6 @@
             <p>Copyright &#169 2022 Catherine Chan & Chi Fang. All rights reserved.</p>
           </ul>
         </footer>
-
       </div>
     </div>
   </div>
