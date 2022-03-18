@@ -489,8 +489,8 @@ nav li a {
 }
 
 .trigger:hover #light {
-  transform: translate(-150px, 0);
-  color: #8a5b9c;
+  transform: translate(-250px, 0);
+  color: #2d6ac5;
   font-style: oblique;
 }
 
