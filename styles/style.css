@@ -385,6 +385,10 @@ nav li a {
   padding-top: 10px;
 }
 
+.fourth span {
+  font-size: 0.8em;
+}
+
 .second {
   /* border: 3px solid lightcoral; */
   grid-column: 3/4;
