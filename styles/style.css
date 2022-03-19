@@ -352,8 +352,9 @@ nav li a {
 #stories_journal_p {
   color: #527383;
   font-size: 1.3em;
-  width: 75vmin;
+  width: 70vmin;
   text-align: left;
+  float: left;
   overflow: hidden;
   padding: 10px 0;
 }
