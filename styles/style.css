@@ -87,7 +87,7 @@ div[class^="background"] {
 }
 
 .background4A::after {
-  background: url("../images/drawings/river.png") no-repeat bottom center;
+  background: url("../images/drawings/river.png") no-repeat center center;
   opacity: 0.3;
   background-size: 100%;
   z-index: -2;
@@ -100,7 +100,6 @@ div[class^="background"] {
   background-size: cover;
   z-index: -1;
 }
-
 
 div[class^="background"]::after {
   content: "";
@@ -118,11 +117,9 @@ nav li:hover,
   transform: scale(1.25);
 }
 
-.active li:hover {
+nav li.nohover:hover  {
   transform: none;
 }
-
-/* I don't want the active nav to transform on hover but it doesn't work? */
 
 .active {
   color: #753557;
@@ -224,6 +221,7 @@ nav li a {
   width: 22vmin;
   float: left;
   overflow: hidden;
+  margin: 20px 20px;
 }
 
 .topbar h1 {
@@ -252,7 +250,6 @@ nav li a {
   text-align: right;
   letter-spacing: 2px;
   padding-right: 75px;
-  overflow: hidden;
 }
 
 .topbar span {
@@ -330,17 +327,19 @@ nav li a {
 #stories_journal_h {
   color: #33a579;
   font-size: 2.2em;
+  width: 75vmin;
   text-align: left;
   float: left;
+  padding: 10px 0;
 }
 
 #stories_journal_p {
   color: #527383;
   font-size: 1.3em;
-  width: 70vmin;
+  width: 75vmin;
   text-align: left;
-  padding-left: 100px;
-  float: left;
+  overflow: hidden;
+  padding: 10px 0;
 }
 
 #stories_pics_h {
@@ -380,12 +379,14 @@ nav li a {
 }
 
 .first p, .fourth p {
-  width: 60vmin;
+  width: 70vmin;
   font-size: 1.3em;
   padding-top: 10px;
 }
 
 .fourth span {
+  font-weight: 600;
+  font-style: italic;
   font-size: 0.8em;
 }
 
@@ -514,6 +515,13 @@ nav li a {
   margin: 0 30px;
 }
 
+#CatBunny2 {
+  width: 18vmin;
+  /*10em */
+  padding-top: 3vmin;
+}
+
+
 #boat {
   width: 9vmin;
   /*6em */
@@ -531,6 +539,13 @@ nav li a {
   transition: transform 3000ms ease-in-out 100ms;
 }
 
+#boat3 {
+  width: 9vmin;
+  /*6em */
+  padding-bottom: 6vmin;
+  transition: transform 3000ms ease-in-out 100ms;
+}
+
 #thoughts_tagline {
   width: 100%;
   text-align: left;
@@ -544,11 +559,15 @@ nav li a {
   text-align: left;
   float: left;
   padding-top: 0;
-  padding-bottom: 8vmin;
+  padding-bottom: 5vmin;
 }
 
 .trigger:hover #boat2 {
   transform: translate(1200px, 0);
+}
+
+.trigger:hover #boat3 {
+  transform: translate(-1300px, 0);
 }
 
 .trigger:hover #home_tagline {
@@ -560,6 +579,12 @@ nav li a {
 .trigger:hover #thoughts_tagline {
   transform: translate(-250px, 0);
   color: #2d6ac5;
+  font-style: oblique;
+}
+
+.trigger:hover #stories_tagline {
+  transform: translate(300px, 0);
+  color: #157575;
   font-style: oblique;
 }
 
@@ -620,7 +645,7 @@ footer {
 }
 
 #quotes a {
-  color: #009ED9;
+  color: #33a579;
   font-size: 1.3em;
   font-weight: 900;
   letter-spacing: 3px;
