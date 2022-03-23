@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'copperplate_gothic_lightRg';
   src: url('coprgtl-webfont.woff2') format('woff2'),
-       url('coprgtl-webfont.woff') format('woff');
+    url('coprgtl-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,7 +28,7 @@
 @font-face {
   font-family: 'copperplate_gothic_boldRg';
   src: url('coprgtb-webfont.woff2') format('woff2'),
-       url('coprgtb-webfont.woff') format('woff');
+    url('coprgtb-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -42,7 +42,10 @@ body {
   margin: 0 auto;
 }
 
-a, h1, h2, h3 {
+a,
+h1,
+h2,
+h3 {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
 }
 
@@ -68,16 +71,31 @@ div[class^="background"] {
 
 .background1::after {
   background: #6b98b9 url("../images/photos/springblossom.jpg") repeat top center;
-  opacity: 0.15;
+  opacity: 0.2;
   background-size: cover;
   z-index: -1;
 }
 
 .background2::after {
   background: url("../images/drawings/path.png") no-repeat center center, url("../images/drawings/river.png") no-repeat center center;
-  opacity: 0.7;
+  opacity: 0.6;
   background-size: 100%;
   z-index: -2;
+}
+
+.background2A::after {
+  background: url("../images/drawings/path.png") no-repeat center center, url("../images/drawings/river.png") no-repeat center center;
+  opacity: 0.25;
+  background-size: 100%;
+  z-index: -1;
+}
+
+.background2B::after {
+  background: url("../images/drawings/path.png") no-repeat center center, url("../images/drawings/river.png") no-repeat center center;
+  opacity: 0.25;
+  transform: scaleX(-1);
+  background-size: 100%;
+  z-index: -1;
 }
 
 .background3::after {
@@ -103,8 +121,8 @@ div[class^="background"] {
 }
 
 .background4A::after {
-  background: url("../images/drawings/river.png") no-repeat bottom center;
-  opacity: 0.3;
+  background: url("../images/drawings/river.png") no-repeat top center;
+  opacity: 0.4;
   background-size: 100%;
   z-index: -2;
 }
@@ -115,6 +133,29 @@ div[class^="background"] {
   transform: scaleX(-1);
   background-size: cover;
   z-index: -1;
+}
+
+.background6::after {
+  background: #6b98b9 url("../images/photos/canyon.jpg") no-repeat bottom center;
+  opacity: 0.25;
+  transform: scaleX(-1);
+  background-size: 100%;
+  z-index: -2;
+}
+
+.background7::after {
+  background: #6b98b9 url("../images/photos/foliage1.jpg") no-repeat bottom center;
+  opacity: 0.25;
+  background-size: cover;
+  z-index: -2;
+}
+
+.background7A::after {
+  background: #6b98b9 url("../images/photos/foliage1.jpg") repeat bottom center;
+  opacity: 0.25;
+  transform: scaleY(-1);
+  background-size: cover;
+  z-index: -2;
 }
 
 div[class^="background"]::after {
@@ -129,11 +170,11 @@ div[class^="background"]::after {
 nav li:hover,
 #search:hover,
 #playmusic:hover,
-.destinations img:hover {
+.destination img:hover {
   transform: scale(1.25);
 }
 
-nav li.nohover:hover  {
+nav li.nohover:hover {
   transform: none;
 }
 
@@ -220,6 +261,14 @@ nav li a {
   justify-self: start;
 }
 
+#about {
+  /*left.topbar for connect page */
+  grid-column: 1/7;
+  grid-row: 2/5;
+  justify-self: start;
+  align-self: top;
+}
+
 #sun {
   width: 28vmin;
   /*15em */
@@ -291,6 +340,14 @@ nav li a {
   align-self: center;
 }
 
+/*
+#wrapper {
+  grid-column: 4/7;
+  grid-row: 2/5;
+  justify-self: end;
+  align-self: start;
+} */
+
 .right.topbar a {
   text-align: right;
   padding-top: 10px;
@@ -306,7 +363,6 @@ nav li a {
   float: right;
 }
 
-
 #playmusic {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
   font-size: 1.8vmin;
@@ -321,27 +377,83 @@ nav li a {
   right: 40px;
 }
 
-#thoughts_wisdom_h, .right.quote h1 {
+/* text colors of other pages */
+
+#thoughts_wisdom_h,
+#wisdom h1 {
   color: #4F6C6B;
-  /* color: #753557; */
 }
 
-#thoughts_wisdom_p, .right.quote p {
-  color: #a555a1;
+#thoughts_wisdom_p,
+#wisdom p {
+  color: #643162;
 }
 
-#thoughts_heart_h, .left.quote h1 {
+#thoughts_heart_h,
+#heart h1 {
   color: #009ED9;
-  /* color: #D6AFEA; */
 }
 
-#thoughts_heart_p, .left.quote p {
+#thoughts_heart_p,
+#heart p {
   color: #c05c45;
-  /* color: #FFF8BE; */
+}
+
+#mentor_share_h,
+#share h1 {
+  color: #B37D4E;
+}
+
+#mentor_share_p,
+#share p {
+  color: #083C5D;
+}
+
+#mentor_coach_h,
+#coach h1 {
+  color: #49274A;
+}
+
+#mentor_coach_p,
+#coach p {
+  color: #B56357;
 }
 
 #stories_journal_h {
   color: #33a579;
+}
+
+#stories_journal_p {
+  color: #527383;
+}
+
+#stories_pics_h {
+  color: #a555a1;
+}
+
+#stories_pics_p {
+  color: #445daf;
+}
+
+#connect_about_h {
+  color: #156904;
+}
+
+#connect_about_p {
+  color: #443775;
+}
+
+#connect_blog_h,
+#blog h1 {
+  color: #745a07;
+}
+
+#connect_blog_p,
+#blog p {
+  color: #423b3e;
+}
+
+#stories_journal_h {
   font-size: 2.2em;
   width: 75vmin;
   text-align: left;
@@ -350,25 +462,46 @@ nav li a {
 }
 
 #stories_journal_p {
-  color: #527383;
   font-size: 1.3em;
-  width: 70vmin;
+  width: 80vmin;
   text-align: left;
   float: left;
   overflow: hidden;
   padding: 10px 0;
 }
 
-#stories_pics_h {
-  color: #a555a1;
-  /* color: #D6AFEA; */
+#connect_about_h {
+  font-size: 2.2em;
+  width: 75vmin;
+  text-align: left;
+  padding: 10px 75px;
 }
 
-#stories_pics_p {
-  color: #445daf;
+#connect_about_p {
+  font-size: 1.3em;
+  width: 45%;
+  text-align: left;
+  padding: 10px 75px;
 }
 
-.destinations {
+#about span {
+  color: #083C5D;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1em;
+}
+
+#about img {
+  width: 80vmin;
+  float: right;
+  padding: 40px 75px;
+}
+
+#connect_blog p {
+  width: 65vmin;
+}
+
+.destination {
   width: 8em;
   text-align: center;
 }
@@ -383,19 +516,21 @@ nav li a {
   padding-left: 75px;
 }
 
-.first.destinations {
+.first.destination {
   justify-self: center;
   top: 6vmin;
   padding: 0;
 }
 
-.first a, .fourth a {
+.first a,
+.fourth a {
   font-size: 2.2em;
   font-weight: 900;
   letter-spacing: 5px;
 }
 
-.first p, .fourth p {
+.first p,
+.fourth p {
   width: 70vmin;
   font-size: 1.3em;
   padding-top: 10px;
@@ -416,7 +551,7 @@ nav li a {
   position: absolute;
 }
 
-.second.destinations {
+.second.destination {
   top: 40vmin;
 }
 
@@ -440,7 +575,7 @@ nav li a {
   padding-right: 75px;
 }
 
-.fourth.destinations {
+.fourth.destination {
   right: 10vmin;
   text-align: center;
   padding-right: 0;
@@ -462,8 +597,17 @@ nav li a {
   position: relative;
 }
 
+.butterfly3 {
+  grid-column: 5/6;
+  grid-row: 2/6;
+  justify-self: start;
+  align-self: top;
+  position: relative;
+}
+
 #flyingbutterfly,
-#flyingbutterfly2 {
+#flyingbutterfly2,
+#flyingbutterfly3 {
   position: absolute;
   width: 12vmin;
   transition: transform 3000ms ease-in-out 100ms;
@@ -477,12 +621,16 @@ nav li a {
   transform: translate(-600px, 500px);
 }
 
-.destinations img {
+.trigger:hover #flyingbutterfly3 {
+  transform: translate(-1500px, 750px);
+}
+
+.destination img {
   width: 8vmin;
   /*4em */
 }
 
-.destinations h3 {
+.destination h3 {
   color: #009ED9;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
@@ -499,12 +647,11 @@ nav li a {
   padding: 10px 20px;
 }
 
-.bottombar p {
-  width: 60%;
+.bottombar p {   /* #home_tagline */
+  width: 70%;
   float: left;
   color: rgb(68, 63, 63);
-  font-size: 2.3vmin;
-  /*1.3em */
+  font-size: 2vmin;
   letter-spacing: 2px;
   /* line-height: 4.5em; */
   padding-top: 3.5vmin;
@@ -538,6 +685,13 @@ nav li a {
   padding-top: 3vmin;
 }
 
+#CatBunny3 {
+  width: 18vmin;
+  /*10em */
+  padding-top: 3vmin;
+  position: relative;
+  right: 20vmin;
+}
 
 #boat {
   width: 9vmin;
@@ -563,7 +717,8 @@ nav li a {
   transition: transform 3000ms ease-in-out 100ms;
 }
 
-#thoughts_tagline {
+#thoughts_tagline,
+#mentor_tagline {
   width: 100%;
   text-align: left;
   float: left;
@@ -587,13 +742,15 @@ nav li a {
   transform: translate(-1300px, 0);
 }
 
-.trigger:hover #home_tagline {
+.trigger:hover #home_tagline,
+.trigger:hover #connect_tagline {
   transform: translate(200px, 0);
   color: #bb484a;
   font-style: oblique;
 }
 
-.trigger:hover #thoughts_tagline {
+.trigger:hover #thoughts_tagline,
+.trigger:hover #mentor_tagline {
   transform: translate(-250px, 0);
   color: #2d6ac5;
   font-style: oblique;
@@ -610,7 +767,23 @@ nav li a {
   display: grid;
   grid-template-columns: 1fr 0.5fr 1.25fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-row-gap: 5px;
+  grid-row-gap: 0;
+}
+
+.back2top {
+  grid-column: 1/7;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: top;
+  padding-top: 10px;
+}
+
+.back2top a {
+  color: #734f96;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
 .right.quote {
@@ -619,6 +792,7 @@ nav li a {
   justify-self: end;
   align-self: start;
   text-align: right;
+  padding-right: 75px;
 }
 
 .left.quote {
@@ -626,19 +800,21 @@ nav li a {
   grid-row: 1/2;
   justify-self: start;
   align-self: top;
+  padding-left: 75px;
 }
 
 .quote h1 {
   font-size: 2.2em;
   font-weight: 900;
   letter-spacing: 5px;
-  padding: 10px 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .quote p {
   width: 80vmin;
   font-size: 1.3em;
-  padding: 30px 75px;
+  padding-bottom: 20px;
 }
 
 .quote span {
@@ -656,18 +832,6 @@ footer {
   padding: 5px 0;
 }
 
-#quotes {
-  background-color: #dde2e8;
-  text-align: center;
-}
-
-#quotes a {
-  color: #33a579;
-  font-size: 1.3em;
-  font-weight: 900;
-  letter-spacing: 3px;
-}
-
 footer ul {
   display: flex;
   justify-content: center;
@@ -681,7 +845,8 @@ footer ul li {
   margin-left: 5px;
 }
 
-footer ul li a, footer p {
+footer ul li a,
+footer p {
   font-size: 1.5vmin;
   /*0.9em */
   font-family: 'Roboto', sans-serif;
