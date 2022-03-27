@@ -49,8 +49,8 @@ body {
 
 h1 {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
-  font-size: 5vmin;
-  /* 2.8em */
+  font-size: 2.8em;
+  /* 5vmin */
   letter-spacing: 7px;
 }
 
@@ -58,7 +58,8 @@ h2,
 a,
 [id$="_h"] {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
-  font-size: 3.8vmin; /*2.2em*/
+  font-size: 2.2em;
+  /*3.8vmin*/
   letter-spacing: 5px;
 }
 
@@ -86,10 +87,11 @@ header a,
 li a {
   font-family: 'Special Elite', cursive;
   letter-spacing: normal;
-  font-size: 2.9vmin;
+  font-size: 2.5vmin;
 }
 
-#topheading2 {
+#topheading2,
+#search2 {
   display: none;
 }
 
@@ -230,7 +232,7 @@ div[class^="background"]::after {
 }
 
 nav li:hover,
-#search:hover,
+.search:hover,
 #playmusic:hover,
 .destination img:hover {
   transform: scale(1.2);
@@ -263,7 +265,7 @@ header {
 }
 
 header a,
-[id^="topheading"] {
+#topheading2 {
   font-weight: 600;
   color: #698695;
   float: left;
@@ -298,9 +300,10 @@ nav li a {
   color: #5a5a5a;
 }
 
-#search {
-  width: 3vmin;
-  /*2em */
+#search1,
+#search2 {
+  width: 0.8em;
+  /*3vmin*/
   vertical-align: top;
 }
 
@@ -341,9 +344,7 @@ nav li a {
 }
 
 #stories_journal_h,
-#connect_about_h {
-
-}
+#connect_about_h {}
 
 #sun {
   width: 28vmin;
@@ -381,7 +382,7 @@ nav li a {
   font-weight: 800;
   text-align: right;
   letter-spacing: 2px;
-  padding-right: 75px;
+  padding: 0 75px 0 0;
 }
 
 #flower {
@@ -646,9 +647,9 @@ nav li a {
 }
 
 #stories_pics {
-  width: 35vmin;
+  width: 38vmin;
   float: right;
-  padding: 10px 20px;
+  padding: 10px 0px 30px 10px;
 }
 
 .bottombar {
@@ -776,7 +777,7 @@ nav li a {
 }
 
 .quote p {
-  width: 80vmin;
+  max-width: 80vmin;
   padding-bottom: 20px;
 }
 
@@ -809,17 +810,169 @@ footer p {
 
 /* Formats for mobile devices below */
 
-@media screen and (max-width: 1100px) {
+
+@media screen and (min-width: 1136px) and (max-width: 1700px) {
+
+  .right.quote {
+    grid-column: 4/7;
+  }
+
+  .left.quote {
+    grid-column: 1/4;
+  }
+
+  .quote p {
+    max-width: 60vmin;
+  }
+}
+
+
+@media screen and (min-width: 631px) and (max-width: 1135px) {
+
+  div[class^="background"]::after {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  div[class^="background2"]::after,
+  div[class^="background4"]::after {
+    background-size: 100%;
+  }
+
+  #stories,
+  #about,
+  .back2top,
+  .quote {
+    grid-column: 1/7;
+  }
+
+  header {
+    grid-column: 1/2;
+  }
+
+  nav {
+    grid-column: 2/7;
+  }
+
+  .left.topbar,
+  .right.topbar {
+    grid-column: 1/7;
+    grid-row: 2/4;
+    justify-self: start;
+    align-self: start;
+  }
+
 
   /* define font styles for all text */
-    
+
   h1 {
+    font-size: 2.2em;
     letter-spacing: 3px;
   }
 
   h2,
-  a {
+  a,
+  [id$="_h"] {
+    font-size: 1.8em;
+    /*wide screen 2.2em*/
     letter-spacing: 3px;
+  }
+
+  h3 {
+    font-size: 0.8em;
+    /* wide screen 1.2em*/
+    letter-spacing: 2px;
+  }
+
+  #playmusic {
+    font-size: 0.7em;
+    letter-spacing: 2px;
+  }
+
+  header a,
+  .back2top a,
+  #topheading2 {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  #home p {
+    font-size: 1.3em;
+  }
+
+  footer a,
+  footer p {
+    font-size: 0.8em;
+    /*wide screen 0.9em*/
+  }
+
+  .bottombar p {
+    font-size: 1em;
+    /*wide screen 1.2em*/
+    letter-spacing: 1px;
+  }
+
+  span {
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  #about span {
+    font-size: 0.9em;
+    /*wide screen 1em*/
+  }
+
+  header a {
+    float: none;
+    padding-top: 0;
+  }
+
+  .topbar h1 {
+    padding: 10px 20px;
+  }
+  
+  .right.topbar p {
+    width: 80vmin;
+  }
+  
+  .gridwrapper2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  div[class^="background"]::after {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  div[class^="background2"]::after {
+    background: url("../images/drawings/path2.png") no-repeat center center, url("../images/drawings/river2.png") no-repeat center center;
+    background-size: 100% auto;
+  }
+
+  div[class^="background4"]::after {
+    background: url("../images/drawings/river2.png") no-repeat center center;
+    background-size: 100% auto;
+  }
+
+  /* define font styles for all text */
+
+  h1 {
+    font-size: 1.6em;
+    letter-spacing: 2px;
+  }
+
+  h2,
+  a,
+  [id$="_h"] {
+    font-size: 1.3em;
+    letter-spacing: 2px;
   }
 
   h3 {
@@ -847,8 +1000,7 @@ footer p {
   }
 
   #home p {
-    font-size: 1.2em;
-    /*wide screen 1.5em*/
+    font-size: 1em;
   }
 
   footer a,
@@ -863,25 +1015,21 @@ footer p {
     letter-spacing: 1px;
   }
 
+  span {
+    font-size: 0.7em;
+    /*wide screen 0.8em*/
+    font-weight: 600;
+  }
+
   #about span {
     font-size: 0.9em;
     /*wide screen 1em*/
   }
 
-  div[class^="background"]::after {
-    background-position: center center;
-    background-size: cover;
+  .topbar h1 {
+    padding: 10px 20px;
   }
 
-  div[class^="background2"]::after {
-    background: url("../images/drawings/path2.png") no-repeat center center, url("../images/drawings/river2.png") no-repeat center center;
-    background-size: 100% auto;
-  }
-
-  div[class^="background4"]::after {
-    background: url("../images/drawings/river2.png") no-repeat center center;
-    background-size: 100% auto;
-  }
 
   /* This doesn't work - it still responds to the original grid.
   .gridwrapper {
@@ -892,8 +1040,6 @@ footer p {
     grid-row-gap: 0;
   } */
 
-  .left.topbar,
-  .right.topbar,
   #stories,
   #about,
   .back2top,
@@ -914,7 +1060,8 @@ footer p {
     overflow: hidden;
   }
 
-  #topheading1 {
+  #topheading1,
+  #search1 {
     display: none;
   }
 
@@ -923,6 +1070,12 @@ footer p {
     margin: 0;
     padding: 0;
     padding-top: 5px;
+  }
+
+  #search2 {
+    display: inline-block;
+    float: right;
+    margin: 5px 5px;
   }
 
   nav ul {
@@ -934,65 +1087,84 @@ footer p {
     margin: 0 10px 0 0;
     vertical-align: top;
   }
-    
+
+  .right.topbar p {
+    width: auto;
+    padding: 10px 20px;
+  }
+
+  .left.topbar,
+  .right.topbar {
+    grid-column: 1/7;
+    grid-row: 2/4;
+    justify-self: start;
+    align-self: start;
+  }
+
   .first {
-    grid-column: 1/3;
+    grid-column: 1/7;
+    grid-row: 4/5;
     justify-self: start;
     align-self: end;
+    padding-left: 20px;
   }
 
   .fourth {
-    grid-column: 3/7;
-    grid-row: 3/5;
+    grid-column: 1/7;
+    grid-row: 4/5;
     justify-self: start;
     align-self: end;
+    padding-right: 20px;
   }
 
-  .first.destination, .third.destination {
+  .first p,
+  .fourth p {
+    width: auto;
+  }
+
+  .first.destination,
+  .third.destination {
     grid-column: 1/7;
     grid-row: 3/4;
     left: auto;
-    top: auto;    
+    top: auto;
   }
 
-  .second.destination, .fourth.destination {
+  .second.destination,
+  .fourth.destination {
     grid-column: 1/7;
     grid-row: 4/5;
     right: auto;
     top: auto;
   }
 
-  .first.destination {  /*thoughts*/
+  .first.destination {
+    /*thoughts*/
     justify-self: start;
     top: 30vmin;
   }
 
-  .second.destination { /*stories*/
+  .second.destination {
+    /*stories*/
     left: 25vmin;
     align-self: end;
   }
 
-  .third.destination { /*mentor*/
+  .third.destination {
+    /*mentor*/
     justify-self: center;
     align-self: center;
   }
 
-  .fourth.destination { /*connect*/
+  .fourth.destination {
+    /*connect*/
     right: 6vmin;
     align-self: center;
   }
- 
+
   #about {
     grid-column: 1/7;
     grid-row: 2/4;
-  }
-
-  [id^="thoughts"],
-  [id^="stories"],
-  [id^="mentor"],
-  [id^="connect"],
-  #catherine {
-    padding: 10px 40px;
   }
 
   #playmusic {
@@ -1002,7 +1174,7 @@ footer p {
   }
 
   .topbar h1 {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
 
   .topbar p {
@@ -1041,17 +1213,7 @@ footer p {
     margin: auto;
   }
 
-  @media screen and (min-width: 601px) and (max-width: 750px) {}
-
-
-  @media screen and (min-width: 751px) and (max-width: 1200px) {}
-
-
-
-
-
-
-
-
-
 }
+
+
+@media screen and (min-width: 751px) and (max-width: 1200px) {}
