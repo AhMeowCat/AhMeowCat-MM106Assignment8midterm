@@ -98,6 +98,7 @@ li a {
 p {
   font-family: 'arial_rounded_mt_boldregular';
   font-size: 1.3em;
+  letter-spacing: normal;
 }
 
 #home p {
@@ -362,8 +363,11 @@ nav li a {
   color: rgb(68, 63, 63);
   font-weight: 800;
   text-align: right;
-  letter-spacing: 2px;
   padding: 0 75px 0 0;
+}
+
+#homequote {
+  letter-spacing: 2px;
 }
 
 #flower {
