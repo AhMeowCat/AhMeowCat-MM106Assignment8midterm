@@ -947,7 +947,7 @@ footer p {
   .bottombar p {
     font-size: 1em;
     /*wide screen 1.2em*/
-    letter-spacing: 1px;
+    letter-spacing: normal;
   }
 
   span {
@@ -1056,7 +1056,7 @@ footer p {
   .bottombar p {
     font-size: 1em;
     /*wide screen 1.2em*/
-    letter-spacing: 1px;
+    letter-spacing: normal;
   }
 
   span {
