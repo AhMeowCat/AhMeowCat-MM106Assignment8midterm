@@ -361,12 +361,12 @@ nav li a {
 
 .topbar p {
   color: rgb(68, 63, 63);
-  font-weight: 800;
   text-align: right;
   padding: 0 75px 0 0;
 }
 
 #homequote {
+  font-weight: 800;
   letter-spacing: 2px;
 }
 
