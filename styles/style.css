@@ -324,25 +324,6 @@ nav li a {
   overflow: hidden;
 }
 
-#about {
-  grid-column: 1/4;
-  grid-row: 2/5;
-  justify-self: start;
-  align-self: top;
-}
-
-#catherine {
-  width: 50vmin;
-  float: left;
-}
-
-#about a,
-#about p {
-  text-align: left;
-  overflow: visible;
-  padding-left: 75px;
-}
-
 #stories_journal_h,
 #connect_about_h {}
 
@@ -550,6 +531,25 @@ nav li a {
   padding-top: 10px;
 }
 
+#about {
+  grid-column: 1/4;
+  grid-row: 2/5;
+  justify-self: start;
+  align-self: top;
+}
+
+#about a,
+#about p {
+  text-align: left;
+  overflow: visible;
+  padding-left: 75px;
+}
+
+#catherine {
+  width: 50vmin;
+  float: left;
+}
+
 .second {
   /* border: 3px solid lightcoral; */
   grid-column: 3/4;
@@ -665,7 +665,7 @@ nav li a {
   width: auto;
   color: rgb(68, 63, 63);
   margin: 0;
-  padding: 4.5vmin 10px 0 10px;
+  padding: 8vmin 10px 0 10px;
   transition: transform 1000ms ease-in-out 100ms;
 }
 
@@ -824,6 +824,10 @@ footer p {
   .quote p {
     max-width: 60vmin;
   }
+
+  #connect_blog p {
+    width: auto;
+  }
 }
 
 
@@ -840,10 +844,13 @@ footer p {
   }
 
   #stories,
-  #about,
   .back2top,
   .quote {
     grid-column: 1/7;
+  }
+
+  #connect_blog p {
+    width: auto;
   }
 
   header {
@@ -852,6 +859,29 @@ footer p {
 
   nav {
     grid-column: 2/7;
+  }
+
+  #butterfly {
+    width: 4em;
+    overflow: hidden;
+  }
+
+  #topheading1,
+  #search1 {
+    display: none;
+  }
+
+  #topheading2 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  #search2 {
+    display: inline-block;
+    float: right;
+    margin: 5px 5px;
   }
 
   .left.topbar,
@@ -892,7 +922,7 @@ footer p {
   header a,
   .back2top a,
   #topheading2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     letter-spacing: 2px;
   }
 
@@ -927,8 +957,12 @@ footer p {
   }
 
   header a {
-    float: none;
     padding-top: 0;
+  }
+
+  nav ul {
+    padding-top: 0.5vmin;
+    justify-content: space-between;
   }
 
   .topbar h1 {
@@ -1002,7 +1036,7 @@ footer p {
   #home p {
     font-size: 1em;
   }
-
+  
   footer a,
   footer p {
     font-size: 0.8em;
@@ -1180,6 +1214,10 @@ footer p {
   .topbar p {
     padding-right: 15px;
     overflow: hidden;
+  }
+
+  #connect_blog p {
+    width: auto;
   }
 
   #sun {
