@@ -972,6 +972,12 @@ footer p {
   .right.topbar p {
     width: 80vmin;
   }
+
+  #playmusic {
+    grid-row: 4/6;
+    top: 25vmin;
+    right: 30px;
+  }
   
   .gridwrapper2 {
     display: block;
@@ -1203,7 +1209,7 @@ footer p {
 
   #playmusic {
     grid-row: 4/6;
-    top: 220px;
+    top: 200px;
     right: 30px;
   }
 
