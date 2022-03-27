@@ -910,8 +910,6 @@ footer p {
     grid-row-gap: 0;
   } */
 
-  header,
-  nav,
   .left.topbar,
   .right.topbar,
   #stories,
@@ -919,6 +917,14 @@ footer p {
   .back2top,
   .quote {
     grid-column: 1/7;
+  }
+
+  header {
+    grid-column: 1/2;
+  }
+
+  nav {
+    grid-column: 2/6;
   }
 
   header,
@@ -975,8 +981,8 @@ footer p {
   [id^="thoughts"],
   [id^="stories"],
   [id^="mentor"],
-  [id^="connect"] {
-    padding-right: 40px;  
+  [id^="connect"], #catherine {
+    padding: 10px 40px;  
   }
 
   #about {
