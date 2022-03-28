@@ -879,13 +879,14 @@ footer p {
   #about p {
     padding: 10px 20px;
   }
-  
+
   #connect_blog {
     grid-column: 1/7;
     grid-row: 4/5;
   }
-  
-  #connect_blog a, #connect_blog p {
+
+  #connect_blog a,
+  #connect_blog p {
     width: auto;
   }
 
@@ -980,23 +981,23 @@ footer p {
   }
 
   #boat2,
-#boat3 {
-  width: 4em;
-  height: 4em;
-}
+  #boat3 {
+    width: 4em;
+    height: 4em;
+  }
 
-.trigger:hover #boat2 {
-  transform: translate(500px, 0);
-}
+  .trigger:hover #boat2 {
+    transform: translate(500px, 0);
+  }
 
-.trigger:hover #boat3 {
-  transform: translate(-300px, 0);
-}
+  .trigger:hover #boat3 {
+    transform: translate(-300px, 0);
+  }
 
   .destination img {
     width: 1.8em;
   }
-  
+
   .butterfly2 {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -1029,7 +1030,7 @@ footer p {
     top: 8vmin;
     right: 6vmin;
   }
-  
+
   footer a,
   footer p {
     font-size: 0.8em;
@@ -1140,7 +1141,8 @@ footer p {
   }
 
   li a {
-    font-size: 0.7em;
+    font-size: 1.1em;
+    /*0.7em*/
   }
 
   p {
@@ -1199,23 +1201,50 @@ footer p {
   #about p {
     padding: 10px 20px;
   }
-    
+
   #connect_blog {
     grid-column: 1/7;
     grid-row: 4/5;
     top: 10vmin;
   }
-  
-  #connect_blog a, #connect_blog p {
+
+  #connect_blog a,
+  #connect_blog p {
     width: auto;
   }
 
   header {
-    grid-column: 1/2;
+    grid-column: 1/4;
   }
 
   nav {
-    grid-column: 2/7;
+    grid-column: 4/7;
+    right: 8vmin;
+  
+  }
+
+  header,
+  nav {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+
+  #topheading2, #search1 {
+    display: none;
+  }
+  
+  #search2 {
+    display: inline-block;
+    float: right;
+    margin: 5px 5px;
+  } 
+
+  nav ul {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 0;
+    line-height: 1.6em;
   }
 
   .back2top,
@@ -1226,34 +1255,6 @@ footer p {
   #butterfly {
     width: 3em;
     overflow: hidden;
-  }
-
-  #topheading1,
-  #search1 {
-    display: none;
-  }
-
-  #topheading2 {
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding-top: 5px;
-  }
-
-  #search2 {
-    display: inline-block;
-    float: right;
-    margin: 5px 5px;
-  }
-
-  nav ul {
-    padding-top: 1vmin;
-    justify-content: space-between;
-  }
-
-  #search {
-    margin: 0 10px 0 0;
-    vertical-align: top;
   }
 
   #playmusic {
@@ -1367,7 +1368,7 @@ footer p {
     justify-self: start;
     align-self: end;
   }
-  
+
   .butterfly2 {
     grid-column: 4/5;
     grid-row: 3/4;
@@ -1375,7 +1376,7 @@ footer p {
     align-self: end;
     position: relative;
   }
-  
+
   .butterfly3 {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -1410,7 +1411,7 @@ footer p {
   }
 
   .trigger:hover #boat,
-  .trigger:hover #boat2, 
+  .trigger:hover #boat2,
   .trigger:hover #boat3,
   .trigger:hover #tagline_R,
   .trigger:hover #tagline_L {
