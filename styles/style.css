@@ -1214,11 +1214,11 @@ footer p {
   }
 
   header {
-    grid-column: 1/4;
+    grid-column: 1/5;
   }
 
   nav {
-    grid-column: 4/7;
+    grid-column: 5/7;
     right: 8vmin;
   
   }
