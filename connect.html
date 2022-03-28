@@ -57,7 +57,7 @@
 
         <div class="left topbar" id="about">
           <img id="catherine" src="images/photos/about-hero1.jpg" alt="Catherine & Boy Boy">
-          <a id="connect_about_h" href="#">about</a>
+          <a id="connect_about_h" href="#contact">about >></a>
           <p id="connect_about_p">Workaholic, overachiever, Type A, no-nonsense, quick action... These used to describe
             me.
             <br><br>I used to take life so seriously that it has become such a "task". I was pragmatic and
@@ -72,7 +72,8 @@
               self.</span>
             <br><br>I see this website as my platform to share writings, activities, visuals, and projects
             as a channel to communicate what Life is all about - to understand & fulfill our Purpose, to embrace
-            Love, and to experience Joy fearlessly. I would also like to mentor others who are interested to take this journey together. <br>Please Journey With Me! 
+            Love, and to experience Joy fearlessly. I would also like to mentor others who are interested to take this
+            journey together. <br>Please Journey With Me!
           </p>
         </div>
 
@@ -102,7 +103,14 @@
 
         <div class="fourth" id="connect_blog">
           <a id="connect_blog_h" href="#blog">blog >></a>
-          <p id="connect_blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nulla. Culpa non voluptatum, cumque libero fugiat doloribus porro qui! Aliquid, commodi maxime. Provident, repellat. Suscipit vitae sed earum quaerat dignissimos iste nam temporibus consequuntur animi odio, ex, ratione in ipsam quae. Facilis praesentium animi repellat recusandae enim odit nulla dolorum ex at consectetur, numquam quibusdam tempora quaerat. Vel, quia possimus autem suscipit architecto laboriosam molestiae! Nam quia assumenda, accusantium reprehenderit nostrum aut aliquam dolorem nisi. Accusamus nulla qui cumque earum blanditiis numquam adipisci. Cupiditate consequatur dolorum placeat sint, velit quo, ad neque mollitia corporis provident tenetur facilis dignissimos minus veniam?</p>
+          <p id="connect_blog_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nulla. Culpa non
+            voluptatum, cumque libero fugiat doloribus porro qui! Aliquid, commodi maxime. Provident, repellat. Suscipit
+            vitae sed earum quaerat dignissimos iste nam temporibus consequuntur animi odio, ex, ratione in ipsam quae.
+            Facilis praesentium animi repellat recusandae enim odit nulla dolorum ex at consectetur, numquam quibusdam
+            tempora quaerat. Vel, quia possimus autem suscipit architecto laboriosam molestiae! Nam quia assumenda,
+            accusantium reprehenderit nostrum aut aliquam dolorem nisi. Accusamus nulla qui cumque earum blanditiis
+            numquam adipisci. Cupiditate consequatur dolorum placeat sint, velit quo, ad neque mollitia corporis
+            provident tenetur facilis dignissimos minus veniam?</p>
         </div>
 
         <div class="bottombar">
@@ -167,6 +175,41 @@
       </div>
     </div>
 
+    <div class="footnote">
+      <header>
+        <h3 id="social">Connect on Social Media</h3>
+
+        <div class="socialmedia">
+          <a href="https://www.facebook.com" target="_blank">
+            <img class="grow" src="images/icons/all-facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img class="grow" src="images/icons/all-instagram.png" alt="Instagram"></a>
+          <a href="https://shutterfly.com" target="_blank">
+            <img class="grow" src="images/icons/all-shutterfly.png" alt="Shutterfly"></a>
+          <a href="https://flickr.com" target="_blank">
+            <img class="grow" src="images/icons/all-flickr.png" alt="Flickr"></a>
+        </div>
+
+        <a id="contact" href="mailto:ychan23@student.ohlone.edu">We are a community. Share your thoughts and sign up for our newsletters.<br>write to me at XXX@XXX.com</a>
+
+      </header>
+
+      <footer>
+        <a href="mailto:ychan23@student.ohlone.edu">share your thoughts</a>
+        <button class="open-button" onclick="openForm()">Sign up for Newsletters</button>
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" placeholder="Name" name="name"><br><br>
+            <label for="email">Your email:</label>
+            <input type="email" id="email" placeholder="Email" name="email">
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </footer>
+    </div>
+
     <footer>
       <ul>
         <li><a href="#">privacy policy</a></li>
@@ -190,6 +233,16 @@
         cssEase: 'linear'
       })
     });
+  </script>
+
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
   </script>
 
   <script src="" async defer></script>
