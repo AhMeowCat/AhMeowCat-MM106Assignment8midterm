@@ -126,7 +126,7 @@ span {
 }
 
 #about span {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 div[class^="background"] {
@@ -784,7 +784,7 @@ nav li a {
 }
 
 .quote p {
-  max-width: 80vmin;
+  width: 80vmin;
   padding-bottom: 20px;
 }
 
@@ -820,6 +820,16 @@ footer p {
 
 @media screen and (min-width: 1091px) and (max-width: 1700px) {
 
+  div[class^="background"]::after {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  div[class^="background2"]::after,
+  div[class^="background4"]::after {
+    background-size: 100%;
+  }
+
   .right.quote {
     grid-column: 4/7;
   }
@@ -829,7 +839,7 @@ footer p {
   }
 
   .quote p {
-    max-width: 60vmin;
+    width: 40vmin;
   }
 
   #connect_blog p {
@@ -1064,6 +1074,19 @@ footer p {
   .gridwrapper2 {
     display: block;
   }
+
+  .quote p {
+    width: auto;
+  }
+
+  .right.quote {
+    padding-right: 20px;
+  }
+
+  .left.quote {
+    padding-left: 20px;
+  }
+
 }
 
 @media screen and (max-width: 630px) {
@@ -1117,7 +1140,7 @@ footer p {
   }
 
   li a {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   p {
@@ -1396,6 +1419,18 @@ footer p {
 
   .gridwrapper2 {
     display: block;
+  }
+
+  .quote p {
+    width: auto;
+  }
+
+  .right.quote {
+    padding-right: 20px;
+  }
+
+  .left.quote {
+    padding-left: 20px;
   }
 
   footer ul {
