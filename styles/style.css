@@ -966,7 +966,7 @@ footer p {
     font-size: 1.3em;
   }
 
-  p {
+  p, #about p {
     font-size: 1.2em;
   }
 
@@ -1070,6 +1070,7 @@ footer p {
   .right.topbar p {
     width: 70vmin;
     padding-top: 10px;
+    padding-right: 10px;
   }
 
   .gridwrapper2 {
@@ -1145,7 +1146,7 @@ footer p {
     /*0.7em*/
   }
 
-  p {
+  p, #about p {
     font-size: 1em;
     /*wide screen 1.3em*/
   }
