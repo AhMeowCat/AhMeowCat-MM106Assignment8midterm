@@ -393,7 +393,7 @@ nav li a {
 }
 
 .right.topbar p {
-  width: 60vmin;
+  width: auto;
   text-align: right;
   padding-top: 10px;
   padding-right: 0;
@@ -921,9 +921,15 @@ footer p {
     margin: 5px 5px;
   }
 
-  .left.topbar,
-  .right.topbar {
+  .left.topbar {
     grid-column: 1/7;
+    grid-row: 2/4;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .right.topbar {
+    grid-column: 4/7;
     grid-row: 2/4;
     justify-self: start;
     align-self: start;
@@ -1068,7 +1074,7 @@ footer p {
   }
 
   .right.topbar p {
-    width: 70vmin;
+    width: auto;
     padding-top: 10px;
     padding-right: 10px;
   }
