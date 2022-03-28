@@ -1221,13 +1221,12 @@ footer p {
   nav {
     grid-column: 5/7;
     right: 8vmin;
-  
-  }
+    }
 
   header,
   nav {
     background-color: rgba(255, 255, 255, 0.45);
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   #topheading2, #search1 {
