@@ -75,7 +75,7 @@ a,
   letter-spacing: 5px;
 }
 
-h3 {
+h3, .destination>.label {
   font-family: Copperplate, "Copperplate Gothic Light", fantasy, Arial;
   font-size: 1.2em;
   /*2vmin */
@@ -697,7 +697,7 @@ nav li a {
   /*8vmin*/
 }
 
-.destination h3 {
+.destination>.label {
   color: #009ED9;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
@@ -1132,7 +1132,7 @@ footer ul li {
     letter-spacing: 3px;
   }
 
-  h3 {
+  h3, .destination>.label {
     font-size: 0.8em;
     /* wide screen 1.2em*/
     letter-spacing: 2px;
@@ -1324,7 +1324,7 @@ footer ul li {
     letter-spacing: 2px;
   }
 
-  h3 {
+  h3, .destination>.label {
     font-size: 0.8em;
     /* wide screen 1.2em*/
     letter-spacing: 2px;
