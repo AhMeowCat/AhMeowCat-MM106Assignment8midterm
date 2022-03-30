@@ -54,7 +54,7 @@ body main {
 }
 
 body main img {
-  width: 80%;
+  width: 60%;
 }
 
 /* define font styles for all text */
@@ -1662,3 +1662,11 @@ footer ul li {
     letter-spacing: 2px;
   }
 }
+
+@media (min-aspect-ratio: 631/937) and (max-aspect-ratio: 1090/937) {
+
+  .bottombar {
+    min-height: 202px;
+  }
+}
+
